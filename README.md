@@ -1,20 +1,17 @@
-gitster
-=======
+# gitster
 
 A fork of shashankmehta's [gitster] theme.
 
 <img width="706" src="https://zimfw.github.io/images/prompts/gitster@2.png">
 
-What does it show?
-------------------
+## What does it show?
 
-  * Red `➜` when last command failed, green otherwise.
-  * Current working directory, relative to the git root when in a git repo.
-  * Current git branch name, or commit short hash when in ['detached HEAD' state].
-  * Yellow `✗` when in a dirty git working tree, green `✓` when in a clean one.
+- Red `➜` when last command failed, green otherwise.
+- Current working directory, relative to the git root when in a git repo.
+- Current git branch name, or commit short hash when in ['detached HEAD' state].
+- Yellow `✗` when in a dirty git working tree, green `✓` when in a clean one.
 
-Advanced settings
------------------
+## Advanced settings
 
 You can customize how the current working directory is shown with the
 [prompt-pwd module settings].
@@ -24,7 +21,7 @@ context formats:
 
 | Context name | Description       | Default format      |
 | ------------ | ----------------- | ------------------- |
-| branch       | Branch name       | `%b`                |
+| branch       | Branch name       | `(%b)`              |
 | commit       | Commit short hash | `%c`                |
 | clean        | Clean state       | `%F{green}%{%G✓%}`  |
 | dirty        | Dirty state       | `%F{yellow}%{%G✗%}` |
@@ -38,8 +35,7 @@ For detailed information about these and other git-info settings, check the
 
 These advanced settings must be overridden after the theme is initialized.
 
-Requirements
-------------
+## Requirements
 
 Requires Zim's [prompt-pwd] module to show the current working directory, and
 [git-info] to show git information.
